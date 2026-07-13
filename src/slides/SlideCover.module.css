@@ -1,0 +1,127 @@
+.cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  position: relative;
+}
+
+.orbitA,
+.orbitB {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(37, 213, 255, 0.12);
+  pointer-events: none;
+}
+
+.orbitA {
+  width: 520px;
+  height: 520px;
+  top: 50%;
+  right: -80px;
+  transform: translateY(-50%);
+}
+
+.orbitB {
+  width: 380px;
+  height: 380px;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%) rotate(15deg);
+}
+
+.copy {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 12px 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.tags span {
+  padding: 5px 14px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.bubble {
+  background: rgba(12, 31, 72, 0.8);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 14px 20px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  text-align: center;
+  position: relative;
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(12, 31, 72, 0.8);
+}
+
+.heroPlaceholder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroName {
+  font-size: 12px;
+  color: var(--dim);
+  letter-spacing: 0.04em;
+}
+
+.meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  color: var(--dim);
+  letter-spacing: 0.05em;
+}

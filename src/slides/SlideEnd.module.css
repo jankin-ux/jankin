@@ -1,0 +1,121 @@
+.end {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 213, 255, 0.08), transparent 60%);
+  pointer-events: none;
+}
+
+.copy {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.heading :global(em) {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.flow {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.flow span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+}
+
+.flow i {
+  font-style: normal;
+  color: var(--line-strong);
+  margin: 0 6px;
+}
+
+.flow b {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cyan);
+}
+
+.flow small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.slogan {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+}
+
+.heroEnd {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.bubble {
+  background: rgba(12, 31, 72, 0.8);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 14px 20px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  text-align: center;
+}
+
+.bubble b {
+  color: var(--white);
+}
+
+.heroPlaceholder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.source {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 11px;
+  color: var(--dim);
+}

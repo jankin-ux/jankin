@@ -1,0 +1,29 @@
+.timer {
+  display: none;
+  font-variant-numeric: tabular-nums;
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.timer.visible {
+  display: block;
+}
+
+.timer.running {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.timer:hover {
+  background: rgba(243, 248, 0, 0.12);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}

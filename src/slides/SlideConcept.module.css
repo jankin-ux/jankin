@@ -1,0 +1,101 @@
+.concept {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.heading :global(em) {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.word {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.word span {
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--cyan);
+  background: rgba(37, 213, 255, 0.06);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  padding: 9px 22px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+
+.tab:hover {
+  border-color: var(--line-strong);
+  color: var(--white);
+}
+
+.tab.active {
+  background: rgba(22, 119, 255, 0.18);
+  border-color: var(--blue);
+  color: var(--white);
+}
+
+.activeContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 540px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.activeContent h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.activeContent p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
